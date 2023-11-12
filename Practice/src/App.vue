@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const count = ref(0);
 
@@ -12,6 +12,9 @@ const increment = () => {
   count.value = count.value + 2;
 }
 
+onMounted(()=> {
+  console.log(count.value);
+})
 
 </script>
 
