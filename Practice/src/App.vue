@@ -13,14 +13,14 @@ const increment = () => {
 }
 
 onMounted(()=> {
-  console.log(count.value);
+  count.value
 })
 
 </script>
 
 <template>
   <div>
-    <h1>Vue: {{ count }}</h1>
+    <h1 ref="count" ></h1>
     <button @click="add">加一</button>
     <button @click="increment">加二</button>
   </div>
